@@ -28,7 +28,7 @@ def fromBinary(n):
         if not n.isdigit:
             return "ERR: Arg isn't a digit"
     else:
-        return "ERR: Arg needs to be int either string(digit)"
+        return "ERR: Arg needs to be int either string(digits only)"
     i=len(n)
     b=[1]
     t=1
