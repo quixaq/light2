@@ -3,9 +3,9 @@ def toBinary(n):
         if n.isdigit():
             n=int(n)
         else:
-            return "ERR: Arg isn't a digit"
+            return "ERR: Arg is a non-numeric string"
     elif not isinstance(n,int):
-        return "ERR: Arg can only be string either int"
+        return "ERR: Arg needs to be an int or a numeric string"
     b=[1]
     p=1
     while b[-1]*2<=n:
@@ -26,9 +26,9 @@ def fromBinary(n):
         n=str(n)
     elif isinstance(n,str):
         if not n.isdigit:
-            return "ERR: Arg isn't a digit"
+            return "ERR: Arg is a non-numeric string"
     else:
-        return "ERR: Arg needs to be int either string(digits only)"
+        return "ERR: Arg needs to be an int or a numeric string"
     i=len(n)
     b=[1]
     t=1
@@ -43,4 +43,3 @@ def fromBinary(n):
             r=r+b[-d]
         t=t+1
     return r
-    
